@@ -104,7 +104,7 @@ b, strong {
 iframe {
 	margin:2.5rem 0;
 }
-.wp-block-embed iframe {
+iframe.wp-block-embed {
 	width:100% !important;
 	height:auto;
 	min-height:30rem;

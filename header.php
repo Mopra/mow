@@ -13,7 +13,7 @@
 	</script>
 	<?php wp_head(); ?>
 	<style>.ezmob-footer {max-height:90px !important;}</style>
-	<script data-ad-client="ca-pub-7346391644341028" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!--<script data-ad-client="ca-pub-7346391644341028" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 </head>
 <body style="overflow-x:hidden;" <?php body_class(); ?>
 <main>
