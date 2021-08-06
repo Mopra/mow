@@ -1,0 +1,49 @@
+.recent     {grid-area: recent;}
+.categories {grid-area: categories;}
+.legal      {grid-area: legal;}
+
+footer {
+    display: grid;
+    row-gap: $rowgap*5;
+    column-gap: $colgap;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "recent recent"
+      "categories categories"
+      "legal legal";
+
+    @media (min-width:$m) {
+        grid-template-areas: 
+        "recent categories"
+        "legal legal";
+    }
+    
+    .recent {
+        list-style-type:none;
+        ul {
+            li {
+                margin: 1rem 0;
+              
+            }
+        }
+    }
+    .categories {
+       ul {
+        display: grid;
+        column-gap: $colgap;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto;
+       }
+    }
+    .legal {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    h6 {
+        margin:1rem 0;
+    }
+    hr {
+        margin:2rem 0;
+    }
+}

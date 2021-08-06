@@ -1,0 +1,87 @@
+
+//Search Icon
+.search.icon {
+	cursor: pointer;
+	top:0;left:0;
+	color: #000;
+	position: absolute;
+	margin-top: .2rem;
+	margin-left: .3rem;
+	width: 1.7rem;
+	height: 1.7rem;
+	border: solid .3rem currentColor;
+	border-radius: 100%;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+
+	@media (min-width:$l) {
+		
+	}
+}
+.search.icon:before {
+	content: '';
+	position: absolute;
+	top: 1.7rem;
+	left: .7rem;
+	height: .9rem;
+	width: .25rem;
+	background-color: currentColor;
+}
+
+
+//Nav Icon
+
+.menu.icon, .menu.icon:before {
+	background-color: currentColor;
+	position: absolute;
+	height: .4rem;
+	border-radius: 20rem;
+}
+.menu.icon {
+	color: #000;
+	margin-left: .2rem;
+	margin-top: 2rem;
+	width: 3rem;
+}
+.menu.icon:before {
+	content: '';
+	top: -1.2rem;
+	left: 0;
+	width: 2rem;
+}
+
+
+//Close Icon
+
+.close.icon {
+	color: #000;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	width: 21px;
+	height: 21px;
+  }
+  
+  .close.icon:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	width: 21px;
+	height: 2px;
+	background-color: currentColor;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+  }
+  
+  .close.icon:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	width: 21px;
+	height: 2px;
+	background-color: currentColor;
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+  }
+  
+  

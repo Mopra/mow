@@ -1,0 +1,125 @@
+html {
+	overflow-x:hidden;font-size:10px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+	padding: 0 1rem;position: relative;
+	overflow-x:hidden;
+	@media (min-width:$m) {
+		margin: 0 auto;
+		padding: 0 2rem;
+		max-width: $l;
+	}
+}
+img {width:100%;height:auto;}
+
+ul, ol { margin:0;padding:0; }
+ul li { list-style-type: none;margin:0; }
+
+.screen-reader-text { display:none; }
+
+/*font styling*/
+
+h1 { font-size: 4.5rem; line-height: 5.5rem; font-weight: 600 }
+h2 { margin-top: 6rem; font-size: 3.5rem; line-height: 4.5rem; font-weight: 600 }
+h3 { margin-top: 6rem; font-size: 2.7rem; line-height: 4rem; font-weight: 600 }
+h4 { margin-top: 6rem; font-size: 2.5rem; font-weight: 400 }
+h5 { font-size: 2rem; line-height: 3.5rem; font-weight: 900 }
+h6 { font-size: 2rem;	font-weight: 400 }
+
+p, span, blockquote, figcaption, ul, ol, a, table {
+	font-size: 2rem;
+}
+
+a {
+	display:inline-block;
+
+	font-weight: 600;
+	font-style: normal;
+	color:#004e92;
+	text-decoration: none;
+	word-break: break-word;
+	transition: all .2s;
+}
+a:hover {
+	text-decoration: none;
+	color:#004e92;
+}
+
+p {
+	word-break: break-word;
+	font-weight: 400;
+	color:rgb(34, 34, 34);
+}
+b, strong {
+	color:#000;
+}
+
+.pagination { margin: 10rem 0; }
+.page-numbers {
+	margin: 0 .8rem;
+	color:#141629;
+	padding:2px 12px;
+}
+.pagination a {
+	transition: all .2s;
+}
+.pagination a:hover {
+	border-radius: 4px;
+	background-color:#141629;
+	color:#fff;
+}
+.pagination a svg {
+	margin-top:-5px;
+}
+
+.btn {
+	color:#000;
+	font-size:1.6rem;
+	margin: 1rem;
+	padding: 1rem;
+	border: solid 1px #000;
+	border-radius: 8px;
+	transition: all .2s;
+	&:hover {
+		background-color:#000;
+		color:#fff;
+	}
+}
+
+.spacer {
+	margin: 20rem 0;
+}
+
+.rtoc-mokuji-content.frame3 { margin: 4rem 0; }
+@media (min-width: 1024px) {
+	.rtoc-mokuji-content.frame3 { width: 100%}
+}
+.rtoc-mokuji-content.rtoc_close #rtoc-mokuji-title .rtoc_open_close {
+	color:#fff;
+	background-color:rgb(37, 37, 37);
+	border-radius: 4px;
+}
+
+iframe {
+	margin:2.5rem 0;
+}
+.wp-block-embed iframe {
+	width:100% !important;
+	height:auto;
+	min-height:30rem;
+	@media (min-width:$m) {
+		min-height:45rem;
+	}
+	@media (min-width:$l) {
+		min-height:47rem;
+	}
+}
+
+html,body {
+	overflow-x:hidden !important;
+}
+
+.ezmob-footer {
+	max-height:90px !important;
+}
