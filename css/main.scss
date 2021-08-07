@@ -111,19 +111,6 @@ main {
                         transform:scale(1.1);
                     }
                 }
-                &:nth-child(1) {
-                    background-image:url('/wp-content/uploads/2021/05/Google-Nest.png');
-                    transition: all .2s;
-                }
-                &:nth-child(2) {
-                    background-image:url('/wp-content/uploads/2021/05/Robot-Vacuums.png');
-                }
-                &:nth-child(3) {
-                    background-image:url('/wp-content/uploads/2021/05/Electric-Cars.png');
-                }
-                &:nth-child(4) {
-                    background-image:url('/wp-content/uploads/2021/05/Smart-Home.png');
-                }
                 h3 {
                     transition: all .2s;
                     font-size:2.7rem;
@@ -390,6 +377,11 @@ main {
 
         }
 
+    }
+    .postPage.index {
+        padding: 5rem 0 10rem 0;
+		width:100%;
+		max-width:820px;
     }
 
 }

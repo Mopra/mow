@@ -34,6 +34,7 @@ add_action( 'after_setup_theme', 'theme_localization' );
  */
 add_theme_support( 'title-tag' );
 
+/*
 //Add [email]...[/email] shortcode
 function shortcode_email( $atts, $content ) {
 	return antispambot( $content );
@@ -101,6 +102,8 @@ function fix_admin_menu_search() {
 	add_action( 'admin_bar_menu', 'wp_admin_bar_valid_search_menu', 4 );
 }
 add_action( 'add_admin_bar_menus', 'fix_admin_menu_search' );
+
+*/
 
 //Disable comments on pages by default
 function theme_page_comment_status( $post_ID, $post, $update ) {

@@ -24,14 +24,29 @@
       </div>
       
       <div class="postPageAside">
-        <div>
-          <h5>Auther:<h5>
-          <h4>Morten Pradsgaard</h4>
-          <p>
-            Morten has been working with technology, IoT and electronics for over a decade. His passion for technology is reflected into this blog to give you relevant and correct information.
-          </p>
-          <a class="uk-buitton uk-button-text" href="/about-living-smarter/"><span uk-icon="link"></span> Read more...</a>
-        </div>
+        <?php 
+
+          if( have_rows('author', 'options') ):
+            while( have_rows('author', 'options') ): the_row();
+
+            $authorName = get_sub_field( 'author_name', 'options' );
+            $authorDesc = get_sub_field( 'author_desc', 'options' );
+            $authorUrl = get_sub_field( 'author_url', 'options' );
+				?>
+
+            <div>
+              <h5>Author:<h5>
+              <h4><?php if ($authorName): echo $authorName; endif; ?></h4>
+              <p>
+                <?php if ($authorDesc): echo $authorDesc; endif; ?>
+              </p>
+              <a href="<?php if ($authorUrl): echo $authorUrl; endif; ?>"> Read more...</a>
+            </div>
+
+        <?php
+            endwhile;
+          endif;
+        ?>
 
         <div class="sidebar_middle_ad">
           <!-- Ezoic - sidebar_middle - sidebar_middle -->

@@ -21,6 +21,33 @@ include( get_template_directory() . '/inc/optimize.php' );
 // Theme logo
 include( get_template_directory() . '/inc/custom_logo.php' );
 
+//ACF
+// Theme logo
+include( get_template_directory() . '/inc/acf.php' );
+
+//Remove notification for ACF plugin
+function remove_update_notifications( $value ) {
+
+    if ( isset( $value ) && is_object( $value ) ) {
+        unset( $value->response[ 'advanced-custom-fields-pro/acf.php' ] );
+    }
+
+    return $value;
+}
+add_filter( 'site_transient_update_plugins', 'remove_update_notifications' );
+//end
+
+
+function my_acf_options_page_settings( $settings )
+{
+	$settings['title'] = 'Global';
+	$settings['pages'] = array('Header', 'Sidebar', 'Footer');
+
+	return $settings;
+}
+
+add_filter('acf/options_page/settings', 'my_acf_options_page_settings');
+
 
 class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 {
