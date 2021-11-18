@@ -179,15 +179,6 @@ function get_date_archive_link(){
 	return $res;
 }
 
-function defer_js( $tag, $handle, $src ){
-	if( ! is_admin() )
-		$tag = str_replace( ' src=', ' defer src=', $tag );
-
-	return $tag;
-}
-# commented block below, because there may be errors with js, if need you can uncomment this block
-// add_filter( 'script_loader_tag', 'defer_js', 99, 3 );
-
 remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
 add_filter('json_enabled', '__return_false');

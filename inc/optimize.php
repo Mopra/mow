@@ -3,10 +3,10 @@
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
-   wp_register_script('jquery', "https://code.jquery.com/jquery-3.6.0.slim.min.js", false, null);
-   //wp_register_script('jquery', "https://zeptojs.com/zepto.min.js", false, null);
+   wp_register_script('jquery', "https://code.jquery.com/jquery-3.6.0.min.js", false, null);
    wp_enqueue_script('jquery');
 }
+
 
 /**
  * Disable the emoji's

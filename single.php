@@ -8,11 +8,11 @@
 
 <div class="postPage">
 
-    <div class="headerContent">
+    <!--<div class="headerContent">
 
-      <img src="<?php echo get_the_post_thumbnail_url();?>"  alt="<?php esc_html ( the_title() ) ?>">
+      <img src="<?php //echo get_the_post_thumbnail_url();?>"  alt="<?php //esc_html ( the_title() ) ?>">
 
-    </div>
+    </div>-->
     
     <?php the_category(); ?>
 

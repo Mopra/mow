@@ -3,7 +3,6 @@ $(document).ready(function () {
 });
 
 
-
 jQuery(function(){			
     jQuery('nav').on("click", function(b) {
         console.log(b.target.nodeName);

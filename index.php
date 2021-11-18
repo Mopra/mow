@@ -34,7 +34,7 @@
 
 						<a href="<?php echo $url; ?>" style="background-image:url('<?php echo $img; ?>');">
 							<h3>
-								<?php echo $title; ?>asd
+								<?php echo $title; ?>
 							</h3>
 						</a>
 
@@ -44,13 +44,6 @@
 
 			?>
 		</div>
-			
-        <!--<div class="categories">
-            <a href="/category/google-nest/"><h3>Google Nest</h3></a>
-            <a href="/category/robot-vacuums/"><h3>Robot Vacuums</h3></a>
-            <a href="/category/electric-cars/"><h3>EVs</h3></a>
-            <a href="/category/smart-home/"><h3>Smart Home</h3></a>
-        </div>-->
 
         <div class="featuredTwo">
           <ul>
